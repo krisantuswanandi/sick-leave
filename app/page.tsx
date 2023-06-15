@@ -2,7 +2,7 @@ import { format } from "date-fns"
 import Item from "./Item"
 
 const dates = [
-  "1990-01-01",
+  "2023-06-15",
 ]
 
 export default function Home() {
