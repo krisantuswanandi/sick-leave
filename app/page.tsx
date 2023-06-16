@@ -3,6 +3,7 @@ import Item from "./Item"
 
 const dates = [
   "2023-06-15",
+  "2023-06-16",
 ]
 
 export default function Home() {
