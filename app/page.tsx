@@ -1,11 +1,10 @@
+import fs from "fs"
+import path from "path"
 import { format } from "date-fns"
 import Item from "./Item"
 
-const dates = [
-  "2023-06-15",
-  "2023-06-16",
-  "2023-06-17",
-]
+const data = fs.readFileSync(path.join(process.cwd(), "data") + "/items.txt", "utf8")
+const dates = data.split("\n").slice(0, -1)
 
 export default function Home() {
   return (
