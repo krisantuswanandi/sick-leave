@@ -12,7 +12,7 @@ export default function Item(props: { label: string }) {
       </Popover.Trigger>
       <Popover.Portal>
         <Popover.Content
-          className="px-3 py-2 border border-slate-800 rounded-md text-sm uppercase outline-none"
+          className="px-3 py-2 border border-slate-800 text-slate-500 rounded-md text-sm uppercase outline-none"
           side="top"
           sideOffset={4}
           alignOffset={4}

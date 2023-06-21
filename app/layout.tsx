@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
-      <body className={`${shareTechMono.className} h-full flex justify-center items-center bg-slate-950 text-slate-500`}>{children}</body>
+      <body className={`${shareTechMono.className} h-full flex justify-center items-center bg-slate-950 text-slate-300`}>{children}</body>
     </html>
   )
 }
