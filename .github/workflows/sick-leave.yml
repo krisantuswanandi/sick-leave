@@ -1,0 +1,18 @@
+name: Sick Leave
+
+on:
+  workflow_dispatch:
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo $(date +%Y-%m-%d) >> data/items.txt
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: sick
+          commit_user_name: Krisantus Wanandi
+          commit_user_email: krisantus.wanandi@gmail.com
