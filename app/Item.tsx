@@ -6,7 +6,7 @@ export default function Item(props: { label: string }) {
   return (
     <Popover.Root>
       <Popover.Trigger asChild>
-        <div className="p-3 hover:bg-slate-900/75 rounded-md">
+        <div className="p-3 hover:bg-slate-900/75 cursor-pointer rounded-md">
           <div className="bg-blue-900 w-1.5 h-1.5 rounded-sm"></div>
         </div>
       </Popover.Trigger>
